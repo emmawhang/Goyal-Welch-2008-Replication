@@ -1,10 +1,24 @@
-#  -----------------------------------------------------------------------------
+#  ============================================================================
 #
-# Title : Goyal & Welch (2008) Replication
-#    By : Daniel A. Amy
-#  Date : 2020-03-16
+# Title   : Goyal & Welch (2008) Replication - Extended to 2018 Data
+#    By   : Daniel A. Amy (Original)
+#          Modified for updated analysis
+#  Date   : 2020-03-16 (Original)
+#          2026-02-01 (Modified)
 #
-#  -----------------------------------------------------------------------------
+# ATTRIBUTION:
+# This is an edited/modified version of the Goyal & Welch (2008) replication.
+# Original paper: Goyal, A., & Welch, I. (2008). A Comprehensive Look at The
+# Empirical Performance of Equity Premium Prediction. Review of Financial Studies,
+# 21(4), 1455-1508.
+#
+# Modifications include:
+# - Updated data through 2018
+# - Extended statistical tables and comparisons
+# - Additional formatting and output options
+# - Comparative analysis with original 2005 results
+#
+#  ============================================================================
 
 #   ____________________________________________________________________________
 #   ATTACH PACKAGES                                                         ####
@@ -28,9 +42,9 @@
 #   IMPORT DATA                                                             ####
 #   ____________________________________________________________________________
 
-    annual <- fread(file.path("/Users/danielamy/Google Drive/[Ph.D.]/[Courses]/Year 1/Summer/[FIN 7806]/Goyal and Welch (2008)/Data/annual_2018.csv"))
+    annual <- fread(file.path("/Users/kiko/Downloads/26Spring/Goyal-and-Welch-2008-/Data/annual_2018.csv"))
     
-    table1_2005_g_w <- fread(file.path("/Users/danielamy/Google Drive/[Ph.D.]/[Courses]/Year 1/Summer/[FIN 7806]/Goyal and Welch (2008)/Data/annual_2005_goyal_welch.csv"))
+    table1_2005_g_w <- fread(file.path("/Users/kiko/Downloads/26Spring/Goyal-and-Welch-2008-/Data/annual_2005_goyal_welch.csv"))
 
 #   ____________________________________________________________________________
 #   DEFINE VARIABLES                                                        ####
@@ -807,7 +821,7 @@
 ##  Print table1 DT in viewer                                               ####
 ##  ............................................................................
     
-    DT <- datatable(table1_sum, filter = 'top',list(paging = FALSE)) %>%
+    DT <- datatable(table1_sum, filter = 'top', list(paging = FALSE))
       
     DT 
     
