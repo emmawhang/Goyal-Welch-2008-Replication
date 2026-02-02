@@ -1,0 +1,9 @@
+{
+  "editor.guides.indentation": false,
+  "editor.guides.highlightActiveIndentation": false,
+  "scm.diffDecorations": "none",
+  "scm.diffDecorationsGutterVisibility": "hover",
+  "r.lsp.enabled": false,
+  "r.lsp.diagnostics": false,
+  "r.rterm.option": []
+}
